@@ -13,7 +13,7 @@
 
   <main>
     <section id="about">
-      <h2>About Me<?h2>
+      <h2>About Me</h2>
       <p> Hello! My name is Cliff Nallding Victor. I am student in website development at Ivy Tech and I just published my first website on GitHup pages!</p> 
       <p> I enjoy creating new projects even though sometimes coding can be tricky. solving problems provides me a sens of pride that I really like. </p>
     <button onclick="alert('Hello from JavaScript!')">Click Me</button>
@@ -66,3 +66,4 @@ button:hover {
   background: #45a049;
 
 }
+
