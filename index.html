@@ -5,53 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Study Smart Website</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Smooth scrolling effect */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Simple nav style */
-    nav {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Home section takes full screen */
-    #home {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5em;
-    }
-
-    section {
-      padding: 50px;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
-  <header style="background:#4CAF50; color:white; padding:20px; position:relative;">
+  <header>
     <h1>Welcome to My Website</h1>
     <!-- Navigation top right -->
     <nav>
@@ -63,15 +19,19 @@
   </header>
 
   <main>
-    <!-- Motivational quote (default landing view) -->
+    <!-- Hero Section (image + motivational quote) -->
     <section id="home">
-      <h2>"Instead of studying hard, try to study smart."</h2>
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+           alt="Student studying at a desk with notebook and laptop">
+      <div class="hero-text">
+        <h2>"Instead of studying hard, try to study smart."</h2>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" style="background:#f9f9f9;">
+    <section id="about">
       <h2>About Me</h2>
-      <p>Hello! My name is Cliff Nallding Victor. I am a student in website development at Ivy Tech and I just published my first website on GitHub pages! I enjoy creating new projects and even though coding can sometimes be tricky, solving problems gives me a sense of pride and accomplishment. I'm passionate about new technologies and building creative solutions</p>
+      <p>Hello! My name is Cliff Nallding Victor. I am a student in website development at Ivy TechI and I just published my first website on GitHub pages! I enjoy creating new projects and even though coding can sometimes be tricky, solving problems gives me a sense of pride and accomplishment. I'm passionate about new technologies and building creative solutions</p>
     </section>
 
     <!-- Study Tips Section -->
@@ -85,9 +45,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="background:#f9f9f9;">
+    <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:cvictor4@ivytech.edu">cvictor4@ivytech.edu</a></p>
+      <p>Email: <a href="mailto: cvictor4@ivytech.edu">cvictor4@ivytech.edu</a></p>
       <p>Phone: (123) 456-7890</p>
     </section>
   </main>
@@ -97,4 +57,3 @@
   </footer>
 </body>
 </html>
-
