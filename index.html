@@ -5,55 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Study Smart Website</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra style just for hero */
+    #home {
+      height: 100vh; /* full screen height */
+      background: url('students.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Welcome to My Website</h1>
-    <!-- Navigation top right -->
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#study-tips">Study Tips</a>
-      <a href="#contact">Contact</a>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('about')">About</a>
+      <a href="#" onclick="showSection('study-tips')">Study Tips</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section (image + motivational quote) -->
+    <!-- Home Section -->
     <section id="home">
-      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
-           alt="Student studying at a desk with notebook and laptop">
-      <div class="hero-text">
-        <h2>"Instead of studying hard, try to study smart."</h2>
-      </div>
+      <div>"Instead of studying hard, try to study smart."</div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- About Section (hidden first) -->
+    <section id="about" style="display:none; padding: 40px;">
       <h2>About Me</h2>
-      <p>Hello! My name is Cliff Nallding Victor. I am a student in website development at Ivy TechI and I just published my first website on GitHub pages! I enjoy creating new projects and even though coding can sometimes be tricky, solving problems gives me a sense of pride and accomplishment. I'm passionate about new technologies and building creative solutions</p>
+      <p>Hello! My name is Cliff Nallding Victor. I am a student in website development at Ivy Tech and I just published my first website on GitHub Pages!</p>
+      <p>I enjoy creating new projects and even though coding sometimes can be tricky, solving problems gives me a strong sense of pride and accomplishment. I'm passionate about learning new technologies and building creative solutions.</p>
     </section>
 
-    <!-- Study Tips Section -->
-    <section id="study-tips">
+    <!-- Study Tips Section (hidden first) -->
+    <section id="study-tips" style="display:none; padding: 40px;">
       <h2>Study Tips</h2>
       <ul>
-        <li>Use Time Blocking: Schedule specific hours for work, school, and rest.</li>
-        <li>Pomodoro Technique: Study for 25 minutes, then take a 5-minute break.</li>
-        <li>Prioritize Tasks: Work on the most important assignments first.</li>
+        <li><strong>Use Time Blocking:</strong> Schedule specific hours for work, school, and rest to stay balanced.</li>
+        <li><strong>Pomodoro Technique:</strong> Study for 25 minutes, then take a 5-minute break to stay focused.</li>
+        <li><strong>Prioritize Tasks:</strong> Do the most important assignments first when your energy is highest.</li>
+        <li><strong>Stay Organized:</strong> Use planners, apps, or calendars to track deadlines and goals.</li>
       </ul>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Contact Section (hidden first) -->
+    <section id="contact" style="display:none; padding: 40px;">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto: cvictor4@ivytech.edu">cvictor4@ivytech.edu</a></p>
-      <p>Phone: (123) 456-7890</p>
+      <p>Email: cvictor4@ivytech.edu</p>
+      <p>Phone: 4632532339</p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 My Website</p>
   </footer>
+
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      document.querySelectorAll("main section").forEach(sec => sec.style.display = "none");
+
+      // Show the one clicked
+      document.getElementById(sectionId).style.display = "block";
+    }
+  </script>
 </body>
 </html>
