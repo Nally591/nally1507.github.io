@@ -42,7 +42,7 @@ button:hover {
 #home {
   height: 100vh; /* full screen * height */
   background:
-url("study-image.jpg") no-repeat center center?cover;
+url("study-image.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
