@@ -40,30 +40,21 @@ button:hover {
 }
 /* Hero Section */
 #home {
-  height: 100vh; /* full screen */
-  position: relative;
+  height: 100vh; /* full screen * height */
+  background:
+url("study-image.jpg") no-repeat center center?cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-}
-
-#home img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
 .hero-text {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
   font-size: 2em;
   font-weight: bold;
-  background: rgba(0,0,0,0.5); /* overlay behind text */
+  background: rgba(0,0,0,0.5); /* adds contrast behind text */
   padding: 20px;
   border-radius: 10px;
 }
