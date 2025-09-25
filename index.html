@@ -1,118 +1,86 @@
-+
-++<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="description" content="Welcome to CNV Study Tips – simple study strategies, resources, and support for students at Ivy Tech and beyond.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Smart Website</title>
+  <title>CNV Study Tips - Home</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Welcome to CNV Study Tips – simple study strategies, resources, and support for students at Ivy Tech and beyond.">
   <style>
-    /* Extra style just for hero */
-    #home {
-      height: 100vh; /* full screen height */
-      background: url('study-image.jpg') no-repeat center center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Hero section styling */
+    .hero {
+      background: url("study-image.jpg") no-repeat center center/cover;
       color: white;
-      text-shadow: 2px 2px 5px black;
-      font-size: 2rem;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero p {
+      font-size: 1.4em;
+      font-style: italic;
+      text-shadow: 1px 1px 3px black;
+    }
+    .cta {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    .cta a {
+      color: orange;
+      text-decoration: none;
       font-weight: bold;
     }
   </style>
 </head>
-  <footer>
-  <div class="footer-content">
-    <p>&copy; 2025 CNV Study Tips. All rights reserved.</p>
-    <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="study-tips.html">Study Tips</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-      <a href="https://www.twitter.com/" target="_blank">Twitter</a>
-    </div>
-  </div>
-</footer>
 <body>
+
+  <!-- Header -->
   <header>
-    <!-- Logo -->
-    <a href="index.html"
-  class="logo">
-    <img src="CNV-Study-Tips.png"
-  alt="CNV Study Tips Logo"
-      style="height:60px;">
-  </a>
-    <!-- Hamburger menu button (only shows on mobile> -->
-     <div class="menu-toggle" id="menu-toggle"></div>
-    <! -- Navigation __>
-    <nav id="nav-menu">
-      <ul>
-        <li><a
-    href="index.html">Home</a></li> <li><a
-    href="about.html">About</a></li>
-            <li><a
-    href="study-tips.html">Study Tips</a></li>  
-          <li>a
-    href+"contact.html">Contact</a></li>
-      </ul>
-    <h1>Welcome to My Website</h1>
+    <a href="index.html" class="logo">
+      <img src="CNV-Study-Tips.png" alt="CNV Study Tips Logo" style="height:60px;">
+    </a>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav>
-      <a href="#" onclick="showSection('home')">Home</a>
-      <a href="#" onclick="showSection('about')">About</a>
-      <a href="#" onclick="showSection('study-tips')">Study Tips</a>
-      <a href="#" onclick="showSection('contact')">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="study-tips.html">Study Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Home Section -->
-    <section id="home">
-      <div class=<"hero-text">
-        "Instead of studying hard, try to study smart."
-      </div>
-  <h1>Welcome to CNV Study Tips</h1>
-  <p>"Instead of studying hard, try to study smart."</p>
+  <!-- Hero Section -->
+  <main class="hero">
+    <p>"Instead of studying hard, try to study smart."</p>
 
-  <!-- Fixed CTA -->
-  <p>
-    <span style="font-size: 1.2em;">👉</span> 
-    <strong> Ready to learn more? </strong> 
-    <a href="study-tips.html" style="color: orange; text-decoration: none; font-weight: bold;">
-      Check out my Study Tips page!
-    </a>
-  </p>
-</main>
+    <div class="cta">
+      <span style="font-size: 1.2em;">👉</span>
+      <strong>Ready to learn more?</strong>
+      <a href="study-tips.html">Check out my Study Tips page!</a>
+    </div>
+  </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 My Website</p>
+    <div class="footer-content">
+      <p>&copy; 2025 CNV Study Tips. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="study-tips.html">Study Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
   </footer>
 
+  <!-- Mobile menu script -->
   <script>
-    function showSection(sectionId) {
-      // Hide all sections
-      document.querySelectorAll("main section").forEach(sec => sec.style.display = "none");
-
-      // Show the one clicked
-      document.getElementById(sectionId).style.display = "block";
-    }
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
