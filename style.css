@@ -301,3 +301,44 @@ footer {
 footer p {
   margin: 2px 0 !important;
 }
+/* Final Footer Reset */
+footer {
+  background-color: #222 !important;
+  color: #ccc !important;
+  padding: 5px !important;      /* minimal padding */
+  margin: 0 auto !important;
+  text-align: center !important;
+  font-size: 0.7em !important;  /* smaller text */
+  line-height: 1.2em !important;
+  max-height: 60px !important;  /* hard cap */
+  overflow: hidden !important;  /* hides extra space */
+}
+
+footer p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer .footer-links {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  padding: 0 !important;
+  margin: 5px 0 0 0 !important;
+  list-style: none !important;
+}
+
+footer .footer-links li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer .footer-links a {
+  color: #aaa !important;
+  text-decoration: none !important;
+  font-size: 0.7em !important;
+}
+
+footer .footer-links a:hover {
+  color: orange !important;
+}
