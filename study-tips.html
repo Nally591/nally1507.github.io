@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="description" content="Practical study tips for students – time blocking, Pomodoro technique, organization, and a weekly study schedule.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Study Tips - CNV Study Tips</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Practical study tips for students – time blocking, Pomodoro technique, organization, and a weekly study schedule.">
+  <style>
+    main {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    ul {
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .study-img {
+      display: block;
+      margin: 20px auto;
+      width: 70%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+    .cta {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .cta a {
+      color: orange;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
     <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="CNV Study Tips Logo" style="height:60px;">
+      <img src="CNV-Study-Tips.png" alt="CNV Study Tips Logo" style="height:60px;">
     </a>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav>
@@ -26,11 +65,10 @@
     </nav>
   </header>
 
-  <!-- Study Tips Content -->
-  <main style="padding: 40px;">
+  <!-- Main Content -->
+  <main>
     <h1>Study Tips</h1>
 
-    <!-- List of Tips -->
     <ul>
       <li><strong>Use Time Blocking:</strong> Schedule specific hours for work, school, and rest to stay balanced.</li>
       <li><strong>Pomodoro Technique:</strong> Study for 25 minutes, then take a 5-minute break to stay focused.</li>
@@ -38,14 +76,11 @@
       <li><strong>Stay Organized:</strong> Use planners, apps, or calendars to track deadlines and goals.</li>
     </ul>
 
-    <!-- Study Desk Image -->
-    <img src="images/Study-Table.jpg" 
-         alt="Desk setup with laptop, notes, and coffee for studying" 
-         style="width:300px; margin:20px 0;">
+    <!-- Fixed image -->
+    <img src="study-image.jpg" alt="Desk setup with laptop, notes, and coffee for studying" class="study-img">
 
-    <!-- Study Schedule Table -->
     <h2>Weekly Study Schedule</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
+    <table>
       <tr>
         <th>Day</th>
         <th>Subject</th>
@@ -77,7 +112,12 @@
         <td>2</td>
       </tr>
     </table>
-    <p><strong>👉 Stay focused and organized – and don’t forget to <a href="contact.html">contact me</a> if you’d like to share your own tips!</strong></p>
+
+    <!-- CTA -->
+    <div class="cta">
+      👉 Stay focused and organized – and don’t forget to 
+      <a href="contact.html">contact me</a> if you’d like to share your own tips!
+    </div>
   </main>
 
   <!-- Footer -->
@@ -94,7 +134,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript for mobile menu -->
+  <!-- Mobile menu script -->
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.querySelector('nav ul');
@@ -104,5 +144,3 @@
   </script>
 </body>
 </html>
-
-        
