@@ -53,6 +53,13 @@
     <div class="cta">
       👉 Have questions or feedback? Send me a message using the form above!
     </div>
+    <script>
+  document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // stop page from refreshing
+    alert("✅ Thank you! Your message has been sent.");
+    this.reset(); // clear the form fields
+  });
+</script>
   </main>
 
   <!-- Footer -->
