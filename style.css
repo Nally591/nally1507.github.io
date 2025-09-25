@@ -282,8 +282,22 @@ footer .footer-links a {
 footer .footer-links a:hover {
   color: orange;
 }
-  .logo {
-  height: 50px;       /* adjust size */
-  margin-right: 15px; /* space between logo and nav */
+ /* Logo Styling */
+.logo {
+  height: 40px;         /* smaller size */
+  width: auto;          /* keep proportions */
+  margin-right: 10px;   /* little space from nav */
   vertical-align: middle;
+}
+/* Force Slim Footer */
+footer {
+  background-color: #222 !important;
+  color: #ccc !important;
+  padding: 5px 10px !important;   /* make it thin */
+  font-size: 0.75em !important;   /* smaller text */
+  margin-top: 20px !important;
+}
+
+footer p {
+  margin: 2px 0 !important;
 }
