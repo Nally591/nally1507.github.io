@@ -5,58 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - CNV Study Tips</title>
   <link rel="stylesheet" href="style.css">
-</head>
   <meta name="description" content="Contact Cliff Nallding Victor – email, phone, and a form to send me a direct message.">
+</head>
 <body>
 
   <!-- Header -->
   <header>
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="CNV Study Tips Logo" style="height:60px;">
+    <a href="index.html">
+      <img src="CNV-Study-Tips.png" alt="CNV Study Tips Logo" class="logo">
     </a>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="study-tips.html">Study Tips</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="resources.html">Resources</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contact Page Content -->
-  <main style="padding: 40px;">
-    <h1>Contact</h1>
+  <!-- Contact Content -->
+  <main>
+    <h1>Contact Me</h1>
     <p>Email: <a href="mailto:cvictor4@ivytech.edu">cvictor4@ivytech.edu</a></p>
     <p>Phone: <a href="tel:4632532339">463-253-2339</a></p>
 
-    <!-- Contact Form (audit requirement) -->
+    <!-- Contact Icon -->
+    <img src="contact-icon.jpg" alt="Contact icon showing phone, email, and message bubble" class="study-img">
+
+    <!-- Contact Form -->
     <h2>Send me a message</h2>
     <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
 
-      <input type="submit" value="Send">
+      <button type="submit">Send</button>
     </form>
 
-    <!-- Contact Icon Image -->
-    <img src="images/contact-icon.jpg" 
-         alt="Contact icon with phone, email, and message bubble" 
-         style="width:150px; margin-top:20px;">
-   <p><strong>👉 Have questions or feedback? Send me a message using the form above!</strong></p>
+    <!-- CTA -->
+    <div class="cta">
+      👉 Have questions or feedback? Send me a message using the form above!
+    </div>
   </main>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 CNV Study Tips. All rights reserved.</p>
-      <ul class="footer-links">
-        <
+    <p>© 2025 CNV Study Tips. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="study-tips.html">Study Tips</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
