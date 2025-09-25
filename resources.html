@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="description" content="Free study resources – Ivy Tech Community College, W3Schools tutorials, and FreeCodeCamp practice.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resources - CNV Study Tips</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Free study resources – Ivy Tech Community College, W3Schools tutorials, and FreeCodeCamp practice.">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="CNV Study Tips Logo" style="height:60px;">
+    <a href="index.html">
+      <img src="CNV-Study-Tips.png" alt="CNV Study Tips Logo" class="logo">
     </a>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="study-tips.html">Study Tips</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="resources.html">Resources</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Resources Content -->
-  <main style="padding: 40px;">
+  <main>
     <h1>Study Resources</h1>
     <p>Here are some helpful websites that can support your learning journey:</p>
 
@@ -36,29 +35,31 @@
       <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a> – tutorials and references for web development.</li>
       <li><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a> – free coding practice and projects.</li>
     </ul>
-    <p><strong>👉 Keep learning! Explore these links and check back often for new resources.</strong></p>
+
+    <!-- CTA -->
+    <div class="cta">
+      👉 Keep learning! Explore these links and check back often for new resources.
+    </div>
   </main>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 CNV Study Tips. All rights reserved.</p>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="study-tips.html">Study Tips</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="resources.html">Resources</a></li>
-      </ul>
-    </div>
+    <p>© 2025 CNV Study Tips. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="study-tips.html">Study Tips</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
   </footer>
 
-  <!-- JavaScript for mobile menu -->
+  <!-- Mobile menu script -->
   <script>
     const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.querySelector('nav ul');
+    const menu = document.getElementById('menu');
     menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
+      menu.classList.toggle('active');
     });
   </script>
 </body>
