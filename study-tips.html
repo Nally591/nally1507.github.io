@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Tips - CNV Study Tips</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="CNV Study Tips Logo" style="height:60px;">
+    </a>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="study-tips.html">Study Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Study Tips Content -->
+  <main style="padding: 40px;">
+    <h1>Study Tips</h1>
+
+    <!-- List of Tips -->
+    <ul>
+      <li><strong>Use Time Blocking:</strong> Schedule specific hours for work, school, and rest to stay balanced.</li>
+      <li><strong>Pomodoro Technique:</strong> Study for 25 minutes, then take a 5-minute break to stay focused.</li>
+      <li><strong>Prioritize Tasks:</strong> Do the most important assignments first when your energy is highest.</li>
+      <li><strong>Stay Organized:</strong> Use planners, apps, or calendars to track deadlines and goals.</li>
+    </ul>
+
+    <!-- Study Desk Image -->
+    <img src="images/Study-Table.jpg" 
+         alt="Desk setup with laptop, notes, and coffee for studying" 
+         style="width:300px; margin:20px 0;">
+
+    <!-- Study Schedule Table -->
+    <h2>Weekly Study Schedule</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <tr>
+        <th>Day</th>
+        <th>Subject</th>
+        <th>Hours</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>Math</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Web Development</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Software Development</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>Review Notes</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Practice Coding</td>
+        <td>2</td>
+      </tr>
+    </table>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 CNV Study Tips. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="study-tips.html">Study Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JavaScript for mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+
+        
