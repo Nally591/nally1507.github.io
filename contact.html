@@ -36,7 +36,7 @@
 
     <!-- Contact Form -->
     <h2>Send me a message</h2>
-    <form>
+    <form id="contactForm">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -53,13 +53,6 @@
     <div class="cta">
       👉 Have questions or feedback? Send me a message using the form above!
     </div>
-    <script>
-  document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault(); // stop page from refreshing
-    alert("✅ Thank you! Your message has been sent.");
-    this.reset(); // clear the form fields
-  });
-</script>
   </main>
 
   <!-- Footer -->
@@ -74,12 +67,23 @@
     </ul>
   </footer>
 
-  <!-- Mobile menu script -->
+  <!-- Scripts -->
   <script>
+    // Mobile menu
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
+    if (menuToggle && menu) {
+      menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
+    }
+
+    // Contact form success message
+    const form = document.getElementById('contactForm');
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("✅ Thank you! Your message has been sent.");
+      form.reset();
     });
   </script>
 </body>
